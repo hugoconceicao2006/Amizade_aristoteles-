@@ -109,7 +109,7 @@ nav ul li a {
     color: white; /* Cor do texto dos botões */
     text-decoration: none; /* Remove sublinhado */
     font-size: 18px; /* Tamanho da fonte dos botões */
-    padding: 10px 20px; /* Espaçamento interno dos botões */
+    padding: 10px 10px; /* Espaçamento interno dos botões */
     background-color: #0059b3; /* Cor de fundo dos botões */
     border-radius: 5px; /* Bordas arredondadas nos botões */
     transition: background-color 0.3s ease; /* Transição suave para hover */
