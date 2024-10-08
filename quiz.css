@@ -1,5 +1,12 @@
 /* quiz.css */
-
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #3de41b; /* Cor de fundo geral */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
 /* Estilos Gerais para o Quiz */
 .quiz-container {
     background-color: #3de41b; /* Fundo branco para o quiz */
