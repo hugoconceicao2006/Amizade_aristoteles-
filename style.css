@@ -102,9 +102,9 @@ form input[type="submit"]:hover, form input[type="button"]:hover {
 }
 
 video {
-  width: 100%;
+  width: 200%;
   max-width: 800px;
-  border-radius: 100px;
+  border-radius: 10px;
 }
 
 /* Feedback List */
