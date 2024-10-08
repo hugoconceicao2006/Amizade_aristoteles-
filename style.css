@@ -101,9 +101,10 @@ form input[type="submit"]:hover, form input[type="button"]:hover {
   text-align: center;
 }
 
-video {
+.video-container iframe {
   width: 100%;
-  max-width: 800px;
+  max-width: 800px; /* Define o tamanho máximo */
+  height: 450px; /* Altura proporcional ao tamanho */
   border-radius: 10px;
 }
 
