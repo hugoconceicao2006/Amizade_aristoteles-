@@ -51,7 +51,7 @@ nav ul li a:hover {
     margin: 20px auto;
     max-width: 800px; /* Limita a largura */
     border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    
     background-color: white; /* Fundo branco para a seção de relatos */
     text-align: center; /* Centraliza o texto da seção */
 }
