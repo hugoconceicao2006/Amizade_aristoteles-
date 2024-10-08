@@ -1,4 +1,5 @@
 /* quiz.css */
+
 /* Global Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -7,80 +8,80 @@ body {
     margin: 0;
     padding: 0;
 }
+
 /* Estilos Gerais para o Quiz */
 .quiz-container {
-    background-color: #ffffff; /* Fundo branco para o quiz */
+    background-color: #ffffff;
     padding: 20px;
-    margin: 20px auto; /* Centraliza a seção */
-    max-width: 800px; /* Limita a largura */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Título do Quiz */
 .quiz-container h2 {
-    text-align: center; /* Centraliza o título */
-    color: #003366; /* Cor do título */
+    text-align: center;
+    color: #003366;
     margin-bottom: 20px;
 }
 
 /* Perguntas */
 .question {
-    margin-bottom: 20px; /* Espaço entre perguntas */
-    padding: 15px; /* Espaçamento interno */
-    border: 1px solid #cccccc; /* Borda leve */
-    border-radius: 5px; /* Bordas arredondadas para perguntas */
-    background-color: #f9f9f9; /* Fundo levemente cinza para perguntas */
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }
 
-/* Estilo para as opções de resposta */
 .question input[type="radio"] {
-    margin-right: 10px; /* Espaçamento à direita do rádio */
+    margin-right: 10px;
 }
 
 .question p {
-    font-size: 18px; /* Tamanho do texto da pergunta */
-    line-height: 1.5; /* Espaçamento entre linhas */
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 /* Botão de Resultado */
 .quiz-container input[type="button"] {
-    background-color: #0059b3; /* Cor do botão */
-    color: white; /* Cor do texto do botão */
-    border: none; /* Sem borda */
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    cursor: pointer; /* Muda o cursor para mão */
-    border-radius: 5px; /* Bordas arredondadas */
-    display: block; /* Faz o botão ocupar toda a largura */
-    margin: 0 auto; /* Centraliza o botão */
-    font-size: 16px; /* Tamanho da fonte do botão */
-    transition: background-color 0.3s ease; /* Transição suave */
+    background-color: #0059b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .quiz-container input[type="button"]:hover {
-    background-color: #0073e6; /* Efeito hover do botão */
+    background-color: #0073e6;
 }
 
 /* Resultado */
 #result {
-    margin-top: 20px; /* Espaço acima do resultado */
-    padding: 10px; /* Espaçamento interno */
-    background-color: #e0f7fa; /* Fundo azul claro para o resultado */
-    border-radius: 5px; /* Bordas arredondadas */
-    text-align: center; /* Centraliza o texto do resultado */
-    color: #003366; /* Cor do texto do resultado */
-    font-weight: bold; /* Negrito para o texto do resultado */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e0f7fa;
+    border-radius: 5px;
+    text-align: center;
+    color: #003366;
+    font-weight: bold;
 }
 
 /* Header Styles (para ser incluído na página do quiz) */
 header {
-    background-color: #003366; /* Cor de fundo do cabeçalho */
+    background-color: #003366;
     padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
-    color: white; /* Cor do título do cabeçalho */
+    color: white;
     margin: 0;
     font-size: 28px;
 }
@@ -89,25 +90,53 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 10px 0;
-    display: flex; /* Alinha os itens lado a lado */
-    justify-content: center; /* Centraliza os itens */
-    gap: 20px; /* Espaçamento entre os itens */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav ul li {
-    margin: 0; /* Remove margem lateral */
+    margin: 0;
 }
 
 nav ul li a {
-    color: white; /* Cor do texto dos botões */
+    color: white;
     text-decoration: none;
     font-size: 18px;
-    padding: 10px 20px; /* Espaçamento interno (padding) */
-    background-color: #0059b3; /* Cor de fundo dos botões */
-    border-radius: 5px; /* Bordas arredondadas nos botões */
+    padding: 10px 20px;
+    background-color: #0059b3;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #0073e6; /* Efeito hover */
+    background-color: #0073e6;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #003366;
+    color: white;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Responsividade para o cabeçalho e menu */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li a {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
 }
