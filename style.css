@@ -156,3 +156,10 @@ footer {
       max-width: 100%;
   }
 }
+@media screen and (max-width: 768px) {
+  .video-container iframe {
+    width: 100%; /* Faz o vídeo ocupar 100% da largura da tela */
+    height: auto; /* Ajusta a altura de forma proporcional */
+  }
+}
+
