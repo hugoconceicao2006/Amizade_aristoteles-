@@ -9,7 +9,7 @@ body {
 }
 /* Estilos Gerais para o Quiz */
 .quiz-container {
-    background-color: #3de41b; /* Fundo branco para o quiz */
+    background-color: #ffffff; /* Fundo branco para o quiz */
     padding: 20px;
     margin: 20px auto; /* Centraliza a seção */
     max-width: 800px; /* Limita a largura */
