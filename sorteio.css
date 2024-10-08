@@ -7,6 +7,45 @@ body {
     padding: 0;
 }
 
+header {
+    background-color: #003366; /* Cor de fundo do cabeçalho */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: white; /* Cor do título do cabeçalho */
+    margin: 0;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex; /* Alinha os itens lado a lado */
+    justify-content: center; /* Centraliza os itens */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+nav ul li {
+    margin: 0; /* Remove margem lateral */
+}
+
+nav ul li a {
+    color: white; /* Cor do texto dos botões */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px; /* Espaçamento interno (padding) */
+    background-color: #0059b3; /* Cor de fundo dos botões */
+    border-radius: 5px; /* Bordas arredondadas nos botões */
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0073e6; /* Efeito hover */
+}
+
 .sorteio-container {
     padding: 20px;
     margin: 20px auto;
@@ -14,6 +53,7 @@ body {
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
     background-color: white; /* Fundo branco para a seção de sorteio */
+    text-align: center; /* Centraliza o texto da seção */
 }
 
 button {
@@ -39,6 +79,16 @@ button:hover {
     text-align: center; /* Centraliza o texto do resultado */
     color: #003366; /* Cor do texto do resultado */
     font-weight: bold; /* Negrito para o texto do resultado */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #003366;
+    color: white;
+    position: relative;
+    width: 100%;
 }
 
 /* Responsividade */
