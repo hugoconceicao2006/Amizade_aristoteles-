@@ -10,20 +10,19 @@ body {
 /* Header Styles */
 header {
   background-color: #003366; /* Cor de fundo do cabeçalho */
-  padding: 20px 0;
-  text-align: center;
+  padding: 20px 0; /* Espaçamento do cabeçalho */
+  text-align: center; /* Centraliza o texto do cabeçalho */
 }
 
 header h1 {
   color: white; /* Cor do título do cabeçalho */
-  margin: 0;
-  font-size: 28px;
+  margin: 0; /* Remove margem */
+  font-size: 28px; /* Tamanho do título */
 }
-
 nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 10px 0;
+  list-style-type: none; /* Remove lista padrão */
+  padding: 0; /* Remove padding */
+  margin: 10px 0; /* Margem superior e inferior */
   display: flex; /* Alinha os itens lado a lado */
   justify-content: center; /* Centraliza os itens */
   gap: 20px; /* Espaçamento entre os itens */
@@ -35,17 +34,18 @@ nav ul li {
 
 nav ul li a {
   color: white; /* Cor do texto dos botões */
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px 20px; /* Espaçamento interno (padding) */
+  text-decoration: none; /* Remove sublinhado */
+  font-size: 18px; /* Tamanho da fonte dos botões */
+  padding: 10px 20px; /* Espaçamento interno dos botões */
   background-color: #0059b3; /* Cor de fundo dos botões */
   border-radius: 5px; /* Bordas arredondadas nos botões */
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; /* Transição suave para hover */
 }
 
 nav ul li a:hover {
-  background-color: #0073e6; /* Efeito hover */
+  background-color: #0073e6; /* Efeito hover dos botões */
 }
+
 
 /* Section Styles */
 section {
