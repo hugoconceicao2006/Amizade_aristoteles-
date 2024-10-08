@@ -72,22 +72,42 @@ body {
     font-weight: bold; /* Negrito para o texto do resultado */
 }
 
-/* Responsividade */
-@media screen and (max-width: 768px) {
-    .quiz-container {
-        padding: 15px; /* Menor padding em telas menores */
-        margin: 10px; /* Margem reduzida em telas menores */
-    }
+/* Header Styles (para ser incluído na página do quiz) */
+header {
+    background-color: #003366; /* Cor de fundo do cabeçalho */
+    padding: 20px 0;
+    text-align: center;
+}
 
-    .quiz-container h2 {
-        font-size: 24px; /* Tamanho menor do título */
-    }
+header h1 {
+    color: white; /* Cor do título do cabeçalho */
+    margin: 0;
+    font-size: 28px;
+}
 
-    .question p {
-        font-size: 16px; /* Tamanho menor das perguntas */
-    }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex; /* Alinha os itens lado a lado */
+    justify-content: center; /* Centraliza os itens */
+    gap: 20px; /* Espaçamento entre os itens */
+}
 
-    .quiz-container input[type="button"] {
-        width: 100%; /* Faz o botão ocupar 100% da largura */
-    }
+nav ul li {
+    margin: 0; /* Remove margem lateral */
+}
+
+nav ul li a {
+    color: white; /* Cor do texto dos botões */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px; /* Espaçamento interno (padding) */
+    background-color: #0059b3; /* Cor de fundo dos botões */
+    border-radius: 5px; /* Bordas arredondadas nos botões */
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0073e6; /* Efeito hover */
 }
