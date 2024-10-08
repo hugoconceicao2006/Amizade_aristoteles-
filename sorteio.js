@@ -123,6 +123,6 @@ const trechos = [
 
 document.getElementById('sortearBtn').addEventListener('click', function() {
     const randomIndex = Math.floor(Math.random() * trechos.length);
-    document.getElementById('trecho').innerText = trechos[randomIndex].texto;
-    document.getElementById('explicacao').innerText = trechos[randomIndex].explicacao + " - Aristóteles, 1992";
+    document.getElementById('trecho').innerText = trechos[randomIndex].texto  + " - Aristóteles, 1992";
+    document.getElementById('explicacao').innerText = trechos[randomIndex].explicacao;
 });
