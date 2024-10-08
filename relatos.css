@@ -123,3 +123,21 @@ footer {
         width: 100%;
     }
 }
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: row; /* Mantém em linha */
+        flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se não houver espaço */
+        gap: 10px; /* Espaçamento entre os itens */
+        justify-content: center; /* Centraliza os itens */
+    }
+
+    header h1 {
+        font-size: 24px; /* Reduz o tamanho do título */
+    }
+
+    nav ul li a {
+        padding: 10px 15px; /* Ajusta o padding dos links para dispositivos menores */
+        font-size: 16px; /* Reduz o tamanho da fonte dos links */
+        white-space: nowrap; /* Impede que o texto quebre em múltiplas linhas */
+    }
+}
