@@ -1,0 +1,66 @@
+/* quiz.css */
+
+/* Estilos Gerais para o Quiz */
+.quiz-container {
+    background-color: #ffffff; /* Fundo branco para o quiz */
+    padding: 20px;
+    margin: 20px auto; /* Centraliza a seção */
+    max-width: 800px; /* Limita a largura */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Título do Quiz */
+.quiz-container h2 {
+    text-align: center; /* Centraliza o título */
+    color: #003366; /* Cor do título */
+    margin-bottom: 20px;
+}
+
+/* Perguntas */
+.question {
+    margin-bottom: 20px; /* Espaço entre perguntas */
+    padding: 15px; /* Espaçamento interno */
+    border: 1px solid #cccccc; /* Borda leve */
+    border-radius: 5px; /* Bordas arredondadas para perguntas */
+    background-color: #f9f9f9; /* Fundo levemente cinza para perguntas */
+}
+
+/* Estilo para as opções de resposta */
+.question input[type="radio"] {
+    margin-right: 10px; /* Espaçamento à direita do rádio */
+}
+
+.question p {
+    font-size: 18px; /* Tamanho do texto da pergunta */
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+/* Botão de Resultado */
+.quiz-container input[type="button"] {
+    background-color: #0066cc; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Sem borda */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    cursor: pointer; /* Muda o cursor para mão */
+    border-radius: 5px; /* Bordas arredondadas */
+    display: block; /* Faz o botão ocupar toda a largura */
+    margin: 0 auto; /* Centraliza o botão */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.quiz-container input[type="button"]:hover {
+    background-color: #005bb5; /* Efeito hover do botão */
+}
+
+/* Resultado */
+#result {
+    margin-top: 20px; /* Espaço acima do resultado */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #e0f7fa; /* Fundo azul claro para o resultado */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto do resultado */
+    color: #003366; /* Cor do texto do resultado */
+    font-weight: bold; /* Negrito para o texto do resultado */
+}
