@@ -1,3 +1,6 @@
+/* relatos.css */
+
+/* Global Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #3de41b; /* Cor de fundo geral */
@@ -6,56 +9,24 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: #003366; /* Cor de fundo do cabeçalho */
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    color: white; /* Cor do título do cabeçalho */
-    margin: 0;
-    font-size: 28px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0;
-    display: flex; /* Alinha os itens lado a lado */
-    justify-content: center; /* Centraliza os itens */
-    gap: 20px; /* Espaçamento entre os itens */
-}
-
-nav ul li {
-    margin: 0; /* Remove margem lateral */
-}
-
-nav ul li a {
-    color: white; /* Cor do texto dos botões */
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 20px; /* Espaçamento interno (padding) */
-    background-color: #0059b3; /* Cor de fundo dos botões (azul mais escuro) */
-    border: none; /* Remove borda */
-    border-radius: 5px; /* Bordas arredondadas nos botões */
-    transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #0073e6; /* Efeito hover */
-}
-
+/* Estilos Gerais para Relatos */
 .relatos-container {
+    background-color: #ffffff;
     padding: 20px;
     margin: 20px auto;
-    max-width: 800px; /* Limita a largura */
-    border-radius: 10px; /* Bordas arredondadas */
-    
-    background-color: white; /* Fundo branco para a seção de relatos */
-    text-align: center; /* Centraliza o texto da seção */
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Título dos Relatos */
+.relatos-container h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+/* Formulário de Relato */
 label {
     display: block;
     margin: 10px 0 5px;
@@ -66,7 +37,7 @@ textarea {
     width: calc(100% - 22px);
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc; /* Borda para campos de texto */
+    border: 1px solid #cccccc; /* Borda para campos de texto */
     border-radius: 5px; /* Bordas arredondadas */
 }
 
@@ -79,12 +50,15 @@ button {
     border-radius: 5px; /* Bordas arredondadas */
     font-size: 16px; /* Tamanho da fonte do botão */
     transition: background-color 0.3s ease; /* Transição suave */
+    display: block;
+    margin: 0 auto; /* Centraliza o botão */
 }
 
 button:hover {
     background-color: #0073e6; /* Efeito hover do botão */
 }
 
+/* Mensagem de Sucesso */
 .mensagem {
     margin-top: 15px; /* Espaço acima da mensagem */
     font-weight: bold; /* Negrito para a mensagem */
@@ -104,7 +78,48 @@ li {
     border-radius: 5px; /* Bordas arredondadas */
 }
 
-/* Estilos do rodapé */
+/* Header Styles */
+header {
+    background-color: #003366; /* Cor de fundo do cabeçalho */
+    padding: 20px 0; /* Espaçamento do cabeçalho */
+    text-align: center; /* Centraliza o texto do cabeçalho */
+}
+
+header h1 {
+    color: white; /* Cor do título do cabeçalho */
+    margin: 0; /* Remove margem */
+    font-size: 28px; /* Tamanho do título */
+}
+
+/* Navegação */
+nav ul {
+    list-style-type: none; /* Remove lista padrão */
+    padding: 0; /* Remove padding */
+    margin: 10px 0; /* Margem superior e inferior */
+    display: flex; /* Alinha os itens lado a lado */
+    justify-content: center; /* Centraliza os itens */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+nav ul li {
+    margin: 0; /* Remove margem lateral */
+}
+
+nav ul li a {
+    color: white; /* Cor do texto dos botões */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 18px; /* Tamanho da fonte dos botões */
+    padding: 10px 20px; /* Espaçamento interno dos botões */
+    background-color: #0059b3; /* Cor de fundo dos botões */
+    border-radius: 5px; /* Bordas arredondadas nos botões */
+    transition: background-color 0.3s ease; /* Transição suave para hover */
+}
+
+nav ul li a:hover {
+    background-color: #0073e6; /* Efeito hover dos botões */
+}
+
+/* Footer Styles */
 footer {
     text-align: center; /* Centraliza o texto do rodapé */
     padding: 15px; /* Padding interno do rodapé */
@@ -117,14 +132,14 @@ footer {
 /* Responsividade */
 @media screen and (max-width: 768px) {
     nav ul {
-        flex-direction: row; /* Mantém em linha */
+        flex-direction: row; /* Mantém os itens em linha */
         flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se não houver espaço */
         gap: 10px; /* Espaçamento entre os itens */
         justify-content: center; /* Centraliza os itens */
     }
 
     header h1 {
-        font-size: 24px; /* Reduz o tamanho do título */
+        font-size: 24px; /* Reduz o tamanho do título para dispositivos menores */
     }
 
     nav ul li a {
