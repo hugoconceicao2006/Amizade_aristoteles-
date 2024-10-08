@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Qual tipo de amizade você cultiva?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz: Descubra seu tipo de amizade</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="simulacao.html">Simulação</a></li>
+                <li><a href="feedback.html">Feedbacks</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="quiz-container">
+        <form id="quizForm">
+            <!-- Pergunta 1 -->
+            <div class="question">
+                <p>1. O que você mais valoriza em um amigo?</p>
+                <input type="radio" name="q1" value="virtude" required> Valores Morais<br>
+                <input type="radio" name="q1" value="prazer"> Diversão<br>
+                <input type="radio" name="q1" value="utilidade"> Ajuda Prática<br>
+            </div>
+            
+            <!-- Pergunta 2 -->
+            <div class="question">
+                <p>2. Como você escolhe amigos para atividades de lazer?</p>
+                <input type="radio" name="q2" value="virtude" required> Pessoas que compartilham valores<br>
+                <input type="radio" name="q2" value="prazer"> Quem traz alegria<br>
+                <input type="radio" name="q2" value="utilidade"> Quem é eficiente<br>
+            </div>
+    
+            <!-- Pergunta 3 -->
+            <div class="question">
+                <p>3. O que você procura em um amigo em momentos difíceis?</p>
+                <input type="radio" name="q3" value="virtude" required> Alguém com caráter forte<br>
+                <input type="radio" name="q3" value="prazer"> Alguém que faça você rir<br>
+                <input type="radio" name="q3" value="utilidade"> Alguém que possa ajudar com soluções práticas<br>
+            </div>
+    
+            <!-- Pergunta 4 -->
+            <div class="question">
+                <p>4. Como você se sente em relação à amizade virtual?</p>
+                <input type="radio" name="q4" value="virtude" required> É importante manter amizades significativas<br>
+                <input type="radio" name="q4" value="prazer"> Gosto de interagir e me divertir<br>
+                <input type="radio" name="q4" value="utilidade"> Às vezes é útil, mas não substitui amigos reais<br>
+            </div>
+    
+            <!-- Pergunta 5 -->
+            <div class="question">
+                <p>5. Qual é a principal razão para manter uma amizade?</p>
+                <input type="radio" name="q5" value="virtude" required> Valores e interesses em comum<br>
+                <input type="radio" name="q5" value="prazer"> A diversão que traz<br>
+                <input type="radio" name="q5" value="utilidade"> O apoio e ajuda que proporcionam<br>
+            </div>
+    
+            <!-- Pergunta 6 -->
+            <div class="question">
+                <p>6. Você prefere amigos que:</p>
+                <input type="radio" name="q6" value="virtude" required> Desafiem você a ser melhor<br>
+                <input type="radio" name="q6" value="prazer"> Façam você se sentir bem<br>
+                <input type="radio" name="q6" value="utilidade"> Estejam prontos para ajudar<br>
+            </div>
+    
+            <!-- Pergunta 7 -->
+            <div class="question">
+                <p>7. Qual tipo de atividade você mais gosta de fazer com amigos?</p>
+                <input type="radio" name="q7" value="virtude" required> Debater ideias e filosofias<br>
+                <input type="radio" name="q7" value="prazer"> Fazer algo divertido e relaxante<br>
+                <input type="radio" name="q7" value="utilidade"> Trabalhar em projetos ou tarefas juntos<br>
+            </div>
+    
+            <!-- Pergunta 8 -->
+            <div class="question">
+                <p>8. O que faz você se sentir conectado a um amigo?</p>
+                <input type="radio" name="q8" value="virtude" required> Compartilhar valores e princípios<br>
+                <input type="radio" name="q8" value="prazer"> Momentos divertidos juntos<br>
+                <input type="radio" name="q8" value="utilidade"> Ser útil um para o outro<br>
+            </div>
+    
+            <!-- Pergunta 9 -->
+            <div class="question">
+                <p>9. Como você vê a importância da amizade em sua vida?</p>
+                <input type="radio" name="q9" value="virtude" required> Fundamental para meu crescimento pessoal<br>
+                <input type="radio" name="q9" value="prazer"> É uma fonte de alegria<br>
+                <input type="radio" name="q9" value="utilidade"> Ajuda em situações práticas e desafios<br>
+            </div>
+    
+            <input type="button" value="Ver resultado" onclick="calculateResult()">
+        </form>
+    
+        <div id="result"></div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Hugo Rian Bezerra - Amizade no Mundo Contemporâneo</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
