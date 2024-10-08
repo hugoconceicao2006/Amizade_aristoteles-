@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #2758a3;
+  background-color: #3de41b;
   color: #333;
   margin: 0;
   padding: 0;
@@ -52,7 +52,7 @@ section {
   padding: 40px 20px;
   margin: 20px auto;
   max-width: 900px;
-  background-color: rgb(138, 48, 48);
+  background-color: rgb(255, 253, 253);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
