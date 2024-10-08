@@ -7,49 +7,46 @@ body {
   padding: 0;
 }
 
+/* Header Styles */
 header {
-  background-image: url('sua-imagem.jpg'); /* Substitua por uma imagem de fundo */
-  background-size: cover;
-  background-position: center;
+  background-color: #003366;
   padding: 20px 0;
   text-align: center;
-  position: relative;
-  height: 200px; /* Ajuste conforme necessário */
 }
 
 header h1 {
-  color: white;
+  color: rgb(134, 44, 44);
   margin: 0;
-  font-size: 32px;
+  font-size: 28px;
 }
 
-/* Atualização da Navbar */
 nav ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
-  display: flex; /* Alinhar itens lado a lado */
-  justify-content: center; /* Centralizar os itens */
-  gap: 15px; /* Espaçamento entre os itens */
+  margin: 10px 0;
+  display: flex; /* Alinha os itens lado a lado */
+  justify-content: center; /* Centraliza os itens */
+  gap: 20px; /* Espaçamento entre os itens */
 }
 
 nav ul li {
-  margin: 0;
+  margin: 0; /* Remover margem lateral */
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 18px;
-  padding: 10px 20px;
-  background-color: rgba(0, 0, 102, 0.8); /* Azul transparente */
-  border-radius: 5px;
+  padding: 10px 20px; /* Espaçamento interno (padding) */
+  background-color: #0059b3; /* Cor de fundo dos botões */
+  border-radius: 5px; /* Bordas arredondadas nos botões */
   transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-  background-color: rgba(0, 0, 102, 1); /* Azul mais forte ao passar o mouse */
+  background-color: #0073e6; /* Efeito hover */
 }
+
 /* Section Styles */
 section {
   padding: 40px 20px;
@@ -105,8 +102,8 @@ form input[type="submit"]:hover, form input[type="button"]:hover {
 }
 
 video {
-  width: 100%; /* Sempre ocupa toda a largura disponível */
-  max-width: 1000px; /* Define um limite maior de largura */
+  width: 100%;
+  max-width: 800px;
   border-radius: 10px;
 }
 
@@ -156,24 +153,5 @@ footer {
 
   video {
       max-width: 100%;
-  }
-}
-/* Responsividade adicional */
-@media screen and (max-width: 768px) {
-  header h1 {
-      font-size: 24px;
-  }
-
-  nav ul {
-      flex-direction: column;
-      gap: 10px; /* Reduzir o espaçamento entre os itens */
-  }
-
-  nav ul li {
-      margin: 5px 0;
-  }
-
-  video {
-      max-width: 100%; /* Garante que o vídeo seja sempre responsivo */
   }
 }
