@@ -1,120 +1,87 @@
-/* Estilos gerais */
+/* sorteio.css */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #3de41b; /* Cor de fundo geral */
+    color: #333;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Para garantir que o rodapé fique na parte inferior */
 }
 
-/* Estilos do cabeçalho */
+/* Cabeçalho */
 header {
     background-color: #003366; /* Cor de fundo do cabeçalho */
-    color: white;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
 }
 
+/* Título do Cabeçalho */
+header h1 {
+    color: white; /* Cor do título do cabeçalho */
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Navegação */
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 10px 0;
+    display: flex; /* Alinha os itens lado a lado */
+    justify-content: center; /* Centraliza os itens */
+    gap: 20px; /* Espaçamento entre os itens */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0; /* Remove margem lateral */
 }
 
-nav a {
-    color: white;
+nav ul li a {
+    color: white; /* Cor do texto dos botões */
     text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px; /* Espaçamento interno (padding) */
+    background-color: #0059b3; /* Cor de fundo dos botões */
+    border-radius: 5px; /* Bordas arredondadas nos botões */
+    transition: background-color 0.3s ease;
 }
 
-/* Estilos do main */
-main {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+nav ul li a:hover {
+    background-color: #0073e6; /* Efeito hover */
 }
 
+/* Container do Sorteio */
 .sorteio-container {
-    max-width: 600px;
-    width: 100%;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-/* Estilos do rodapé */
-footer {
-    background-color: #003366; /* Cor de fundo do rodapé */
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Estilos específicos do quiz */
-.quiz-container {
-    background-color: #ffffff; /* Fundo branco para o quiz */
+    flex: 1; /* Permite que esta seção ocupe o espaço restante da tela */
     padding: 20px;
-    margin: 20px auto; /* Centraliza a seção */
+    margin: 20px auto;
     max-width: 800px; /* Limita a largura */
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-color: white; /* Fundo branco para a seção de sorteio */
+    text-align: center; /* Centraliza o texto da seção */
 }
 
-.quiz-container h2 {
-    text-align: center; /* Centraliza o título */
-    color: #003366; /* Cor do título */
-    margin-bottom: 20px;
-}
-
-.question {
-    margin-bottom: 20px; /* Espaço entre perguntas */
-    padding: 15px; /* Espaçamento interno */
-    border: 1px solid #cccccc; /* Borda leve */
-    border-radius: 5px; /* Bordas arredondadas para perguntas */
-    background-color: #f9f9f9; /* Fundo levemente cinza para perguntas */
-}
-
-.question input[type="radio"] {
-    margin-right: 10px; /* Espaçamento à direita do rádio */
-}
-
-.question p {
-    font-size: 18px; /* Tamanho do texto da pergunta */
-    line-height: 1.5; /* Espaçamento entre linhas */
-}
-
-.quiz-container input[type="button"] {
+/* Botão */
+button {
     background-color: #0059b3; /* Cor do botão */
     color: white; /* Cor do texto do botão */
     border: none; /* Sem borda */
     padding: 10px 20px; /* Espaçamento interno do botão */
     cursor: pointer; /* Muda o cursor para mão */
     border-radius: 5px; /* Bordas arredondadas */
-    display: block; /* Faz o botão ocupar toda a largura */
-    margin: 0 auto; /* Centraliza o botão */
     font-size: 16px; /* Tamanho da fonte do botão */
     transition: background-color 0.3s ease; /* Transição suave */
 }
 
-.quiz-container input[type="button"]:hover {
+button:hover {
     background-color: #0073e6; /* Efeito hover do botão */
 }
 
 /* Resultado */
-#result {
+.resultado {
     margin-top: 20px; /* Espaço acima do resultado */
     padding: 10px; /* Espaçamento interno */
     background-color: #e0f7fa; /* Fundo azul claro para o resultado */
@@ -124,19 +91,23 @@ footer {
     font-weight: bold; /* Negrito para o texto do resultado */
 }
 
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #003366;
+    color: white;
+    position: relative;
+    width: 100%;
+}
+
 /* Responsividade */
-@media (max-width: 600px) {
-    nav ul li {
-        display: block; /* Itens do menu empilhados */
-        margin: 10px 0;
+@media screen and (max-width: 768px) {
+    .sorteio-container {
+        padding: 10px; /* Diminui o padding em telas menores */
     }
 
     button {
-        width: 100%; /* Botão ocupa toda a largura */
-        font-size: 18px;
-    }
-
-    .sorteio-container {
-        margin-top: 20px;
+        width: 100%; /* Botão ocupa toda a largura em telas menores */
     }
 }
