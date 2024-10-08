@@ -9,13 +9,13 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #003366;
+  background-color: #003366; /* Cor de fundo do cabeçalho */
   padding: 20px 0;
   text-align: center;
 }
 
 header h1 {
-  color: rgb(134, 44, 44);
+  color: white; /* Cor do título do cabeçalho */
   margin: 0;
   font-size: 28px;
 }
@@ -30,11 +30,11 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0; /* Remover margem lateral */
+  margin: 0; /* Remove margem lateral */
 }
 
 nav ul li a {
-  color: white;
+  color: white; /* Cor do texto dos botões */
   text-decoration: none;
   font-size: 18px;
   padding: 10px 20px; /* Espaçamento interno (padding) */
