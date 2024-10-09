@@ -128,11 +128,20 @@ footer {
     position: relative; /* Posição relativa para evitar sobreposição */
     width: 100%; /* Largura total do rodapé */
 }
+
+/* Centralizar o iframe */
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Adiciona um espaço ao redor do formulário */
+}
+
 iframe {
     width: 100%;
-    height: auto; /* Ajusta a altura automaticamente */
-    max-width: 640px; /* Limita a largura máxima */
-    border: none; /* Remove as bordas */
+    height: auto;
+    max-width: 640px; /* Largura máxima do iframe */
+    border: none;
 }
 
 /* Responsividade */
