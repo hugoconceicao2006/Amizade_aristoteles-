@@ -134,15 +134,15 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0; /* Adiciona um espaço ao redor do formulário */
 }
 
 iframe {
-    width: 100%;
-    height: auto;
-    max-width: 640px; /* Largura máxima do iframe */
-    border: none;
+    width: 100%; /* O iframe vai ocupar toda a largura disponível */
+    max-width: 900px; /* Define um limite máximo de largura */
+    height: 800px; /* Altura maior para evitar rolagem vertical */
+    border: none; /* Remove bordas */
 }
+
 
 /* Responsividade */
 @media screen and (max-width: 768px) {
