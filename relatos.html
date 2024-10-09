@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relatos de Amizade</title>
     <link rel="stylesheet" href="relatos.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("YOUR_USER_ID"); // Substitua YOUR_USER_ID pela sua chave pública
+        })();
+    </script>
+    <script src="relatos.js" defer></script>
 </head>
 <body>
     <header>
@@ -23,13 +30,13 @@
         <h2>Compartilhe sua Experiência</h2>
         <p>Queremos ouvir sua história de amizade! Preencha o formulário abaixo e inspire outras pessoas com suas palavras.</p>
 
-        <form id="relatoForm" netlify>
+        <form id="relatoForm">
             <label for="nome">Seu Nome:</label>
             <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
-            
+
             <label for="relato">Seu Relato:</label>
             <textarea id="relato" name="relato" rows="4" required placeholder="Escreva aqui sua experiência de amizade"></textarea>
-        
+
             <button type="submit">Enviar Relato</button>
         </form>
 
@@ -42,9 +49,5 @@
     <footer>
         <p>&copy; 2024 Hugo Rian Bezerra - Relatos de Amizade</p>
     </footer>
-
-    <script src="relatos.js"></script>
-
-</body><script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
+</body>
 </html>
