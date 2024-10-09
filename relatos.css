@@ -128,6 +128,12 @@ footer {
     position: relative; /* Posição relativa para evitar sobreposição */
     width: 100%; /* Largura total do rodapé */
 }
+iframe {
+    width: 100%;
+    height: auto; /* Ajusta a altura automaticamente */
+    max-width: 640px; /* Limita a largura máxima */
+    border: none; /* Remove as bordas */
+}
 
 /* Responsividade */
 @media screen and (max-width: 768px) {
