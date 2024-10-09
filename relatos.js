@@ -1,5 +1,10 @@
 // Adicione o script do EmailJS ao seu HTML antes de usar este código
 
+// Inicializa o EmailJS
+(function() {
+    emailjs.init("yeCr5m-nEWKpXpCH"); // Substitua pelo seu USER ID
+})();
+
 document.getElementById('relatoForm').addEventListener('submit', function(e) {
     e.preventDefault(); // Evita o envio do formulário
 
@@ -25,7 +30,7 @@ document.getElementById('relatoForm').addEventListener('submit', function(e) {
             mensagemDiv.textContent = "Seu relato foi enviado com sucesso!";
         })
         .catch((error) => {
-            mensagemDiv.textContent = "Erro ao enviar relato: " + error.message;
+            mensagemDiv.textContent = "Erro ao enviar relato: " + error.text; // Altere para error.text para mais detalhes
         });
     } else {
         mensagemDiv.textContent = "Por favor, preencha todos os campos.";
