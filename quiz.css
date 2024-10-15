@@ -26,7 +26,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Perguntas */
+/* Perguntasss */
 .question {
     margin-bottom: 20px;
     padding: 15px;
@@ -44,7 +44,7 @@ body {
     line-height: 1.5;
 }
 
-/* Botão de Resultado */
+/* Botão de Resultados */
 .quiz-container input[type="button"] {
     background-color: #0059b3;
     color: white;
@@ -62,7 +62,7 @@ body {
     background-color: #0073e6;
 }
 
-/* Resultado */
+/* Resultados */
 #result {
     margin-top: 20px;
     padding: 10px;
@@ -73,7 +73,7 @@ body {
     font-weight: bold;
 }
 
-/* Header Styles (para ser incluído na página do quiz) */
+/* Header Styles para ser incluído na página do quiz */
 header {
     background-color: #003366;
     padding: 20px 0;
@@ -127,19 +127,19 @@ footer {
 /* Responsividade para o cabeçalho e menu */
 @media screen and (max-width: 768px) {
     nav ul {
-        flex-direction: row; /* Mantém em linha */
-        flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se não houver espaço */
-        gap: 10px; /* Espaçamento entre os itens */
-        justify-content: center; /* Centraliza os itens */
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        gap: 10px; 
+        justify-content: center; 
     }
 
     header h1 {
-        font-size: 24px; /* Reduz o tamanho do título */
+        font-size: 24px; 
     }
 
     nav ul li a {
-        padding: 10px 15px; /* Ajusta o padding dos links para dispositivos menores */
-        font-size: 16px; /* Reduz o tamanho da fonte dos links */
-        white-space: nowrap; /* Impede que o texto quebre em múltiplas linhas */
+        padding: 10px 15px; 
+        font-size: 16px; 
+        white-space: nowrap; 
     }
 }
